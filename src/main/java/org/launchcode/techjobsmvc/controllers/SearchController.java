@@ -34,7 +34,7 @@ public class SearchController {
                                        @RequestParam("searchTerm") String searchTerm) {
 
         ArrayList<Job> jobs;
-
+        //works with && not ||
         if (searchType.equals("all") && searchTerm.isEmpty()) {
             jobs = JobData.findAll();
         } else {
